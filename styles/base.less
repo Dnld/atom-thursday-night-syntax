@@ -41,7 +41,7 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
 }
 
 atom-text-editor.is-focused .cursor {
-  border-left: 2px solid #92b2c9;
+  border-left: 2px solid @syntax-cursor-color;
 }
 
 atom-text-editor.is-focused .selection .region {
@@ -50,7 +50,7 @@ atom-text-editor.is-focused .selection .region {
 
 .syntax--comment,
 .syntax--punctuation.syntax--definition.syntax--comment {
-  color: #555557;
+  color: @syntax-comment-color;
 }
 
 .syntax--variable {
@@ -58,13 +58,13 @@ atom-text-editor.is-focused .selection .region {
 }
 
 .syntax--function > .syntax--variable {
-  color: #df935f;
+  color: @syntax-orange-color;
 }
 
 .syntax--keyword,
 .syntax--storage.syntax--modifier,
 .syntax--storage.syntax--type {
-  color: #B294BB;
+  color: @syntax-purple-color;
 }
 
 .syntax--keyword.syntax--operator,
@@ -77,13 +77,13 @@ atom-text-editor.is-focused .selection .region {
 .syntax--punctuation.syntax--definition.syntax--tag.syntax--html,
 .syntax--punctuation.syntax--definition.syntax--tag.syntax--begin.syntax--html,
 .syntax--punctuation.syntax--definition.syntax--tag.syntax--end.syntax--html {
-  color: #9ac9c4;
+  color: @syntax-aqua-color;
 }
 
 .syntax--entity.syntax--name.syntax--tag,
 .syntax--meta.syntax--tag.syntax--sgml,
 .syntax--markup.syntax--deleted.git_gutter {
-  color: #d77c79;
+  color: @syntax-red-color;
 }
 
 .syntax--entity.syntax--name.syntax--function,
@@ -91,12 +91,12 @@ atom-text-editor.is-focused .selection .region {
 .syntax--support.syntax--function,
 .syntax--keyword.syntax--other.syntax--special-method,
 .syntax--meta.syntax--block-level {
-  color: #92b2c9;
+  color: @syntax-blue-color;
 }
 
 .syntax--support.syntax--other.syntax--variable,
 .syntax--string.syntax--other.syntax--link {
-  color: #d77c79;
+  color: @syntax-red-color;
 }
 
 .syntax--constant.syntax--numeric,
@@ -106,7 +106,7 @@ atom-text-editor.is-focused .selection .region {
 .syntax--variable.syntax--parameter,
 .syntax--punctuation.syntax--section.syntax--embedded,
 .syntax--keyword.syntax--other.syntax--unit {
-  color: #df935f;
+  color: @syntax-orange-color;
 }
 
 .syntax--string,
@@ -115,7 +115,7 @@ atom-text-editor.is-focused .selection .region {
 .syntax--entity.syntax--other.syntax--inherited-class,
 .syntax--markup.syntax--heading,
 .syntax--markup.syntax--inserted.git_gutter {
-  color: #99C794;
+  color: @syntax-green-color;
 }
 
 .syntax--variable.syntax--constant.syntax--elixir,
@@ -128,17 +128,17 @@ atom-text-editor.is-focused .selection .region {
 .syntax--meta.syntax--use.syntax--php,
 .syntax--support.syntax--other.syntax--namespace.syntax--php,
 .syntax--markup.syntax--changed.git_gutter {
-  color: #f4cf87;
+  color: @syntax-orange-color;
 }
 
 .syntax--entity.syntax--name.syntax--module.syntax--js,
 .syntax--variable.syntax--import.syntax--parameter.syntax--js,
 .syntax--variable.syntax--other.syntax--class.syntax--js {
-  color: #d77c79;
+  color: @syntax-red-color;
 }
 
 .syntax--variable.syntax--language {
-  color: #d77c79;
+  color: @syntax-red-color;
 }
 
 .syntax--entity.syntax--name.syntax--method.syntax--js {
@@ -150,7 +150,7 @@ atom-text-editor.is-focused .selection .region {
 }
 
 .syntax--entity.syntax--other.syntax--attribute-name {
-  color: #B294BB;
+  color: @syntax-purple-color;
 }
 
 .syntax--markup.syntax--inserted {
@@ -166,16 +166,16 @@ atom-text-editor.is-focused .selection .region {
 }
 
 .syntax--string.syntax--regexp {
-  color: #9ac9c4;
+  color: @syntax-aqua-color;
 }
 
 .syntax--constant.syntax--character.syntax--escape {
-  color: #9ac9c4;
+  color: @syntax-aqua-color;
 }
 
 .syntax--constant.syntax--character.syntax--escape.syntax--css,
 .syntax--constant.syntax--character.syntax--escape.syntax--scss  {
-  color: #99C794;
+  color: @syntax-green-color;
 }
 
 * .syntax--url *, * .syntax--link *, * .syntax--uri * {
