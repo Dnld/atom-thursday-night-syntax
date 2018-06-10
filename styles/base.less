@@ -27,7 +27,6 @@ atom-text-editor .indent-guide {
   color: @syntax-indent-guide-color;
 }
 
-
 atom-text-editor .invisible-character {
   color: @syntax-invisible-character-color;
 }
@@ -42,7 +41,7 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
 }
 
 atom-text-editor.is-focused .cursor {
-  border-left: 2px solid @syntax-cursor-color;
+  border-left: 2px solid #92b2c9;
 }
 
 atom-text-editor.is-focused .selection .region {
@@ -151,19 +150,19 @@ atom-text-editor.is-focused .selection .region {
 }
 
 .syntax--entity.syntax--other.syntax--attribute-name {
-  color: #BB80B3;
+  color: #B294BB;
 }
 
 .syntax--markup.syntax--inserted {
-  color: #99C794;
+  color: @syntax-color-added;
 }
 
 .syntax--markup.syntax--deleted {
-  color: #d77c79;
+  color: @syntax-color-removed;
 }
 
 .syntax--markup.syntax--changed {
-  color: #BB80B3;
+  color: @syntax-color-modified;
 }
 
 .syntax--string.syntax--regexp {
